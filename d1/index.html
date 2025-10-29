@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Digital OB Web Page</title>
+
+<style>
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to bottom right, #dfe9f3, #ffffff);
+    margin: 0;
+    padding: 20px;
+  }
+
+  h1 {
+    text-align: center;
+    color: #2c2c2c;
+    font-weight: bold;
+  }
+
+  .search-box {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+  }
+
+  #searchInput {
+    width: 60%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    outline: none;
+  }
+
+  #searchInput:focus {
+    border-color: #007bff;
+  }
+  .garment-img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border: 1px solid #ddd;
+}
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  th {
+    background-color: #4098e6;
+    color: white;
+    padding: 12px;
+    text-align: left;
+  }
+
+  td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+  }
+
+  tr:hover {
+    background-color: #f1f7ff;
+  }
+
+  .view-link {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  .view-link:hover {
+    text-decoration: underline;
+  }
+
+  .no-result {
+    text-align: center;
+    color: red;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+</style>
+</head>
+
+<body>
+
+  <h1>Digital OB Web Page</h1>
+
+  <div class="search-box">
+    <input type="text" id="searchInput" placeholder="Search by Style No or Product..." onkeyup="searchTable()">
+  </div>
+
+  <table id="obTable">
+    <thead>
+      <tr>
+        <th>S.NO</th>
+        <th>BUYER</th>
+        <th>STYLE NO</th>
+        <th>IMAGE</th>
+        <th>PRODUCT</th>
+        <th>FACTORY NAME</th>
+        <th>VIEW DIGITAL OB</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>A&F</td>
+        <td>132J0823</td>
+        <td><img src="132J0823.png" alt="Jacket" class="garment-img"></td>
+        <td>JACKET</td>
+        <td>GI & IB</td>
+        <td><a href="https://gokaldasexport-my.sharepoint.com/:x:/g/personal/giied_gokaldasexports_com/EXZyYt976SZBvaIbyEPA9i8Bl5lUZvrlU_y96g469-ut5Q?e=OxhtVa" class="view-link">View DIGITAL OB</a></td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>A&F</td>
+        <td>132J0838</td>
+        <td><img src="132J0838.png" alt="Hoodie" class="garment-img"></td>
+        <td>JACKET</td>
+        <td>GI</td>
+        <td><a href="https://gokaldasexport-my.sharepoint.com/personal/giied_gokaldasexports_com/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fgiied%5Fgokaldasexports%5Fcom%2FDocuments%2F132J0838%20%20JULY%202025&ga=1" class="view-link">View DIGITAL OB</a></td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>A&F</td>
+        <td>132J0905-Solid</td>
+        <td><img src="132J0905-Solid.png" alt="Hoodie" class="garment-img"></td>
+        <td>JACKET</td>
+        <td>GI</td>
+        <td><a href="https://gokaldasexport-my.sharepoint.com/personal/giied_gokaldasexports_com/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fgiied%5Fgokaldasexports%5Fcom%2FDocuments%2F132J0905%20CRITICAL%20OPERATION&ga=1" class="view-link">View DIGITAL OB</a></td>
+      </tr>
+       <tr>
+        <td>4</td>
+        <td>A&F</td>
+        <td>S263440017</td>
+        <td><img src="S263440017.png" alt="Hoodie" class="garment-img"></td>
+        <td>JACKET</td>
+        <td>IB</td>
+        <td><a href="https://gokaldasexport-my.sharepoint.com/:x:/g/personal/ibied_gokaldasexports_com/Ec5AhGXF0vdJu--X3WhUaXQBdYtFCeK1BpauOePPHudUKg?e=p1pFtX" class="view-link">View DIGITAL OB</a></td>
+      </tr>
+       <tr>
+        <td>5</td>
+        <td>A&F</td>
+        <td>132J0819</td>
+        <td><img src="132J0819.jpg" alt="Hoodie" class="garment-img"></td>
+        <td>JACKET</td>
+        <td>GI</td>
+        <td><a href="https://gokaldasexport-my.sharepoint.com/my?id=%2Fpersonal%2Fshailajacs%5Fgokaldasexports%5Fcom%2FDocuments%2FSHOBICA%2FINTERN%20%2D%20IIHT%2F132J0819%20A%26F%20JACKET%20%2D%20GI&ga=1" class="view-link">View DIGITAL OB</a></td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>A&F</td>
+        <td>132J0819</td>
+        <td><img src="132J0819.jpg" alt="Hoodie" class="garment-img"></td>
+        <td>JACKET</td>
+        <td>GI</td>
+        <td><a href="https://gokaldasexport-my.sharepoint.com/my?id=%2Fpersonal%2Fshailajacs%5Fgokaldasexports%5Fcom%2FDocuments%2FSHOBICA%2FINTERN%20%2D%20IIHT%2F132J0819%20A%26F%20JACKET%20%2D%20GI&ga=1" class="view-link">View DIGITAL OB</a></td>
+      </tr>
+      <tr>
+        <td>6</td>
+        <td>A&F</td>
+        <td>132J0907</td>
+        <td><img src="132J0907.png" alt="Hoodie" class="garment-img"></td>
+        <td>COAT</td>
+        <td>GI</td>
+        <td><a href="https://gokaldasexport-my.sharepoint.com/my?id=%2Fpersonal%2Fshailajacs%5Fgokaldasexports%5Fcom%2FDocuments%2FSHOBICA%2FINTERN%20%2D%20IIHT%2F132J0907%20A%26F%20JACKET%20JDC&viewid=bcc0ab5e%2D8096%2D493d%2D97a3%2D7cea3d8165e3&ga=1" class="view-link">View DIGITAL OB</a></td>
+      </tr>
+      <tr>
+        <td>7</td>
+        <td>AEO</td>
+        <td>1784</td>
+        <td><img src="1784.jpg" alt="Hoodie" class="garment-img"></td>
+        <td>JACKET</td>
+        <td>TA6</td>
+        <td><a href="https://gokaldasexport-my.sharepoint.com/my?id=%2Fpersonal%2Fshailajacs%5Fgokaldasexports%5Fcom%2FDocuments%2FSHOBICA%2FINTERN%20%2D%20JSR%20COLLEGE%2F1784%20AEO&ga=1" class="view-link">View DIGITAL OB</a></td>
+      </tr>
+       <tr>
+        <td>8</td>
+        <td>BR</td>
+        <td>D68124</td>
+        <td><img src="D68124.jpg" alt="Hoodie" class="garment-img"></td>
+        <td>JACKET</td>
+        <td>TA6</td>
+        <td><a href="https://gokaldasexport-my.sharepoint.com/personal/maheshwari_g_gokaldasexports_com/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fmaheshwari%5Fg%5Fgokaldasexports%5Fcom%2FDocuments%2FTA%2D6%2FAUGUST%20%2D25%2DDIGI%2FDIGITAL%20OB%20D68124&ga=1" class="view-link">View DIGITAL OB</a></td>
+      </tr>
+       <tr>
+        <td>9</td>
+        <td>BR</td>
+        <td>D43623</td>
+        <td><img src="D43623.png" alt="Hoodie" class="garment-img"></td>
+        <td>LEATHER JACKET</td>
+        <td>GI</td>
+        <td><a href="https://gokaldasexport-my.sharepoint.com/my?id=%2Fpersonal%2Fshailajacs%5Fgokaldasexports%5Fcom%2FDocuments%2FSHOBICA%2FINTERN%20%2D%20IIHT%2FD43623%20BANANA%20REPUBLIC%20LEATHER%20JACKET&ga=1" class="view-link">View DIGITAL OB</a></td>
+      </tr>
+       <tr>
+        <td>10</td>
+        <td>BR</td>
+        <td>D61857</td>
+        <td><img src="D61857.jpg" alt="Hoodie" class="garment-img"></td>
+        <td>JACKET</td>
+        <td>TA6</td>
+        <td><a href="https://gokaldasexport-my.sharepoint.com/my?id=%2Fpersonal%2Fshailajacs%5Fgokaldasexports%5Fcom%2FDocuments%2FSHOBICA%2FINTERN%20%2D%20RIT%2FD61857%20JACKET&ga=1" class="view-link">View DIGITAL OB</a></td>
+      </tr>
+       <tr>
+        <td>11</td>
+        <td>JC PENNY</td>
+        <td>377902</td>
+        <td><img src="377902.jpg" alt="Hoodie" class="garment-img"></td>
+        <td>DRESS</td>
+        <td>TA6</td>
+        <td><a href="https://gokaldasexport-my.sharepoint.com/personal/maheshwari_g_gokaldasexports_com/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fmaheshwari%5Fg%5Fgokaldasexports%5Fcom%2FDocuments%2FTA%2D6%2FJULY%2D25%20DIGI%2DOB%2FD377902%20DIGITAL%20OB&ga=1" class="view-link">View DIGITAL OB</a></td>
+      </tr>
+      <tr>
+        <td>12</td>
+        <td>SANMAR</td>
+        <td>W961</td>
+        <td><img src="SANMAR - w961 -r26.jfif" alt="Hoodie" class="garment-img"></td>
+        <td>HALF SLEEVE SHIRT</td>
+        <td>HPF</td>
+        <td><a href="https://gokaldasexport-my.sharepoint.com/:x:/r/personal/hpf1ied_gokaldasexports_com/_layouts/15/Doc.aspx?sourcedoc=%7BEEBFCBB6-386D-486D-98D1-32F28F30F55F%7D&file=Digital%20OB%20-%20March%202025.xlsx&fromShare=true&action=default&mobileredirect=true" class="view-link">View DIGITAL OB</a></td>
+      </tr>
+      <tr>
+        <td>13</td>
+        <td>SANMAR</td>
+        <td>W960</td>
+        <td><img src="W960-R19.jpg" alt="Hoodie" class="garment-img"></td>
+        <td>FULL SLEEVE SHIRT</td>
+        <td>HPF</td>
+        <td><a href="https://gokaldasexport-my.sharepoint.com/:x:/g/personal/hpf1ied_gokaldasexports_com/EXeStYaBRChBqsGUhwvFY8wBViIIpuuwjPIwbKaG8hkL_A?e=x6bwSN" class="view-link">View DIGITAL OB</a></td>
+      </tr>
+
+
+    </tbody>
+  </table>
+
+  <p id="noResult" class="no-result" style="display: none;">No match result found</p>
+
+<script>
+  function searchTable() {
+    const input = document.getElementById("searchInput").value.toLowerCase();
+    const table = document.getElementById("obTable");
+    const rows = table.getElementsByTagName("tr");
+    let found = false;
+
+    for (let i = 1; i < rows.length; i++) {
+      const cells = rows[i].getElementsByTagName("td");
+      let match = false;
+
+      for (let j = 0; j < cells.length; j++) {
+        if (cells[j]) {
+          const textValue = cells[j].textContent || cells[j].innerText;
+          if (textValue.toLowerCase().indexOf(input) > -1) {
+            match = true;
+            break;
+          }
+        }
+      }
+
+      rows[i].style.display = match ? "" : "none";
+      if (match) found = true;
+    }
+
+    document.getElementById("noResult").style.display = found ? "none" : "block";
+  }
+</script>
+
+</body>
+</html>
